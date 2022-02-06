@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row" style="margin-top:20px; margin-left:20px">
+
+    <div class="col-6" style="color:white; font_weight:bold;";> Live Face Detection
+        <img id="bg" width=700px height=550px src="{{ url_for('video_feed') }}">
+    </div>
+    
+    
+    
+    <div class="col-6" style="color:white ; font_weight:bold;";> Ratio of Each Emotion 
+        <img id="bg2" width=700px height=550px src="{{ url_for('ratio_chart') }}">
+    </div>
+
+
+</div>
+
+<!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Facial Emotion Recognition 2021</p></div>
+        </footer>      
+
+{% endblock %}
+   
